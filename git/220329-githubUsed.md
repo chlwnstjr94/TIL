@@ -35,3 +35,19 @@
 5. 생성 후 Code버튼을 눌러 URL를 복사한다.
 6. git Bash에 `git remote add origin URL주소`를 입력한다.
 7. `git remote`와 `git remote -v`를 입력해 잘 연결 되어있는지 확인한다.
+
+### Commit Convention
+
+- commit 제목은 50자 이내로 요약하여 작성, 내용은 문장 형으로 작성하여 추가 설명
+- commit을 자르는 단위는 동작하는 단위로 하는 것이 좋다.
+- prefix를 사용하여 한 눈에 commit의 용도를 알기 쉽게 한다.
+ >- feat: features – 기능 개발 관련
+ >- docs: documentations – 문서 관련
+ >- conf: configurations – 환경설정 관련
+ >- test: test – test 관련
+ >- fix: bug-fix – 잘못된 기능 수정
+ >- refactor: refactoring – 잘되는 기능 수정(향상)
+ >- ci: Continuous Integration - Continuous Integration 관련
+ >- build: Build – 빌드 했을 때 생기는 부산물 커밋
+ >- perf: Performance – 퍼포먼스 했을 때 생기는 부산물 커밋
+
